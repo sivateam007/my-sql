@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jassif Team Institution - MySQL Tutorials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .start-learning-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            box-shadow: 0 8px 25px rgba(39, 174, 96, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .start-learning-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(39, 174, 96, 0.4);
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .category-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--git-color);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-left-color: #e74c3c;
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            color: var(--git-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .category-card h3 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        .category-card p {
+            color: #666;
+            line-height: 1.5;
+            text-align: center;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .lesson-count {
+            background: #f8f9fa;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #666;
+            display: inline-block;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--git-color);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-stats {
+                gap: 1rem;
+            }
+            
+            .stat-number {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h1>Jassif Team <span>Institution</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Complete MySQL Tutorial Series</h2>
+            <p>Master Database Management with Comprehensive MySQL Lessons</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Lessons</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Practical</span>
+                </div>
+            </div>
+
+            <a href="MySQL Tutorial.html" class="start-learning-btn">
+                <i class="fas fa-play-circle"></i>
+                Start Learning Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Categories Grid -->
+        <div class="category-grid">
+            <!-- Basics -->
+            <a href="MySQL Tutorial.html" class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>MySQL Basics</h3>
+                <p>Learn fundamental concepts and get started with MySQL database management</p>
+                <div class="lesson-count">Beginner Friendly</div>
+            </a>
+
+            <!-- Queries -->
+            <a href="MySQL SELECT Statement.html" class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>SQL Queries</h3>
+                <p>Master SELECT statements, filtering, sorting and data retrieval techniques</p>
+                <div class="lesson-count">Core Concepts</div>
+            </a>
+
+            <!-- Data Operations -->
+            <a href="MySQL INSERT INTO Statement.html" class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h3>Data Operations</h3>
+                <p>Insert, update, delete and modify data in your databases</p>
+                <div class="lesson-count">Essential Skills</div>
+            </a>
+
+            <!-- Functions -->
+            <a href="MySQL Functions.html" class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <h3>Functions & Operators</h3>
+                <p>Use built-in functions and operators for data manipulation</p>
+                <div class="lesson-count">Powerful Tools</div>
+            </a>
+
+            <!-- Joins -->
+            <a href="MySQL Joins.html" class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-link"></i>
+                </div>
+                <h3>Table Joins</h3>
+                <p>Combine data from multiple tables using different join types</p>
+                <div class="lesson-count">Advanced Techniques</div>
+            </a>
+
+            <!-- Database Management -->
+            <a href="MySQL CREATE DATABASE Statement.html" class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Database Management</h3>
+                <p>Create, modify and manage databases and tables effectively</p>
+                <div class="lesson-count">Administration</div>
+            </a>
+
+            <!-- Constraints -->
+            <a href="MySQL Constraints.html" class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Data Integrity</h3>
+                <p>Implement constraints to maintain data quality and relationships</p>
+                <div class="lesson-count">Best Practices</div>
+            </a>
+
+            <!-- Advanced Topics -->
+            <a href="MySQL Views.html" class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Advanced Features</h3>
+                <p>Explore views, indexes, and other advanced MySQL capabilities</p>
+                <div class="lesson-count">Expert Level</div>
+            </a>
+        </div>
+
+        <!-- Certificate Section -->
+        <section class="content-section" style="text-align: center; margin-top: 4rem;">
+            <h2>Complete Your Learning Journey</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #666;">
+                Finish the course and earn your certificate of completion
+            </p>
+            <a href="certificate.html" class="start-learning-btn" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                <i class="fas fa-award"></i>
+                Get Your Certificate
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Jassif Team Institution</h3>
+                <p>Leading educational institution providing quality programming education in Tamil.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="MySQL Tutorial.html">Start Learning</a></li>
+                    <li><a href="certificate.html">Get Certificate</a></li>
+                    <li><a href="#"><i class="fas fa-database"></i> All Courses</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Jassif Team Institution. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all content sections for animation
+        document.querySelectorAll('.category-card, .content-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+    <!-- Home Button -->
+    <a href="index.html" class="home-icon">
+        <i class="fas fa-home"></i>
+    </a>
+</body>
+</html>
